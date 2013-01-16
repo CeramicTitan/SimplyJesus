@@ -1,6 +1,6 @@
 package me.ceramictitan.simplyjesus.Listeners;
 
-import main.java.me.ceramictitan.simplyjesus.User.User;
+import me.ceramictitan.simplyjesus.User.User;
 
 import org.bukkit.EntityEffect;
 import org.bukkit.entity.Player;
