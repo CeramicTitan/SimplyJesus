@@ -1,5 +1,5 @@
 name: SuperGod
-main: me.ceramictitan.SuperGod.SuperGod
+main: me.ceramictitan.simplyjesus.SimplyJesus
 version: ${project.version}
 description: >
              Invinciblity plugin.
