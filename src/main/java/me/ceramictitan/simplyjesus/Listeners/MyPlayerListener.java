@@ -3,6 +3,7 @@ package me.ceramictitan.simplyjesus.Listeners;
 import me.ceramictitan.simplyjesus.User.User;
 
 import org.bukkit.EntityEffect;
+import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -18,6 +19,9 @@ public class MyPlayerListener implements Listener {
 			if (User.godlist.contains(player.getName())) {
 				event.setCancelled(true);
 				player.playEffect(EntityEffect.HURT);
+				if (player.getGameMode() == GameMode.CREATIVE) {
+					return;
+				}
 			}
 		}
 	}
