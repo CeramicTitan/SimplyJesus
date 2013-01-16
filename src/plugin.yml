@@ -1,0 +1,14 @@
+name: SuperGod
+main: me.ceramictitan.SuperGod.SuperGod
+version: ${project.version}
+description: >
+             Invinciblity plugin.
+commands:
+  jesus:
+    description: make player invincible.
+    permissions: simply.jesus
+    usage: /<command>
+  unjesus:
+    description: makes player vulnerable.
+    permissions: simply.unjesus
+    usage: /<command>

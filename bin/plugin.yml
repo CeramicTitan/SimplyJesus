@@ -1,0 +1,19 @@
+name: SuperGod
+main: me.ceramictitan.SuperGod.SuperGod
+version: 8
+description: >
+             Invinciblity plugin.
+commands:
+  god:
+    description: make player invincible.
+    permissions: supergod.god
+    usage: /<command>
+  ungod:
+    description: makes player vulnerable.
+    permissions: supergod.ungod
+    usage: /<command>
+  update:
+    description: downloads the plugins latest version.
+    permissions: supergod.update
+    usage: /<command>
+       
