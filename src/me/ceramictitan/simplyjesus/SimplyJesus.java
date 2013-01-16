@@ -13,7 +13,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class SimplyJesus extends JavaPlugin {
-	public final MyPlayerListener playerListener = new MyPlayerListener(this);
+	public final MyPlayerListener playerListener = new MyPlayerListener();
 
 	@Override
 	public void onDisable() {
@@ -30,9 +30,6 @@ public class SimplyJesus extends JavaPlugin {
 						+ " is now enabled.");
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(this.playerListener, this);
-		getConfig().addDefault("main.update-notify", true);
-		getConfig().addDefault("main.motd", true);
-		getConfig().addDefault("main.GodEffect", true);
 		getConfig().addDefault("metrics.enable", true);
 		getConfig().options().copyDefaults(true);
 		saveConfig();

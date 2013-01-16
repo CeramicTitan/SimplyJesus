@@ -24,7 +24,7 @@ public class CommandUngod implements CommandExecutor {
 								+ targetplayer.getDisplayName());
 						targetplayer.sendMessage(ChatColor.GOLD + "["
 								+ sender.getName() + "]" + ChatColor.AQUA
-								+ " has removed your god mode!");
+								+ " has removed your jesus mode!");
 					} else {
 						sender.sendMessage(ChatColor.RED
 								+ "Can't find that player, maybe they're offline?");
@@ -56,11 +56,11 @@ public class CommandUngod implements CommandExecutor {
 					Player targetplayer = player.getServer().getPlayer(args[0]);
 					User.disableGodMode((Player) targetplayer);
 					player.sendMessage(ChatColor.AQUA
-							+ "God mode no longer active for " + ChatColor.GOLD
-							+ targetplayer.getDisplayName());
+							+ "Jesus mode no longer active for "
+							+ ChatColor.GOLD + targetplayer.getDisplayName());
 					targetplayer.sendMessage(ChatColor.GOLD + "["
 							+ sender.getName() + "]" + ChatColor.AQUA
-							+ " has removed your god mode!");
+							+ " has removed your jesus mode!");
 				} else {
 					player.sendMessage(ChatColor.RED
 							+ "Can't find that player, maybe they're offline?");

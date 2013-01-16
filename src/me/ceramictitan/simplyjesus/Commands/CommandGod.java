@@ -21,10 +21,10 @@ public class CommandGod implements CommandExecutor {
 						User.enableGodMode(targetplayer);
 						sender.sendMessage(ChatColor.AQUA
 								+ targetplayer.getDisplayName()
-								+ " Your god mode is now active!");
+								+ " Your jesus mode is now active!");
 						targetplayer.sendMessage(ChatColor.GOLD + "["
 								+ sender.getName() + "]" + ChatColor.AQUA
-								+ " has granted you god mode!");
+								+ " has granted you jesus mode!");
 					} else {
 						sender.sendMessage(ChatColor.RED
 								+ "Can't find that player, maybe they're offline?");
@@ -46,7 +46,7 @@ public class CommandGod implements CommandExecutor {
 			if (args.length == 0) {
 				User.enableGodMode((Player) sender);
 				player.sendMessage(ChatColor.AQUA
-						+ "Your god mode is now active!");
+						+ "Your jesus mode is now active!");
 
 			} else if (args.length == 1) {
 				if (!player.hasPermission("simply.jesus.others")) {

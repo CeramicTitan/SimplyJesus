@@ -7,8 +7,10 @@ commands:
   jesus:
     description: make player invincible.
     permissions: simply.jesus
+    aliases: [j]
     usage: /<command>
   unjesus:
     description: makes player vulnerable.
     permissions: simply.unjesus
+    aliases: [uj]
     usage: /<command>
